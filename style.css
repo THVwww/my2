@@ -6,6 +6,7 @@
     /* size */
     --max-width: 759px;
     --max-height: 420px
+   
 }
 body {
     font-family: "Open Sans", sans-serif;
@@ -38,13 +39,13 @@ body {
     height: 100%;
     width: 200%;
     left: -100%;
-    background: url("moun.jpg");
+    background: #FAF0E6;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transform: translateX(0);
-    transition: transfotm 0.6s ease;
+    transition: transfotm 0.6s ease;    
 
 }
 
@@ -139,7 +140,7 @@ transition: all 300ms ease;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 6rem;
+    padding: 0 4.9rem;
     height: 100%;
  }
 
@@ -154,4 +155,35 @@ transition: all 300ms ease;
  }
  .input:focus {
     box-shadow: #0005 0 2px 5px -1px;
+ }
+
+ .form > .btn {
+    margin-top: 1.5rem;
+    width: 112%;
+ }
+
+ .signIn {
+    width: 50%;
+    z-index: 2;
+ }
+ .container.right-panel-active
+ .signIn {
+transform: translateX(100%);
+ }
+
+ .title {
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 1.25rem;
+ }
+
+ .link {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin: 1.5rem 0;
+    text-decoration: none;
+ }
+
+ .link:hover {
+    color: var(--primary);
  }
